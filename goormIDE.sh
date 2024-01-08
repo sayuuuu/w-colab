@@ -1,6 +1,6 @@
-sudo adduser akuhnet --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
-echo "akuhnet:123" | sudo chpasswd
-sudo usermod -aG sudo,adm akuhnet
+sudo adduser user --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
+echo "user:123" | sudo chpasswd
+sudo usermod -aG sudo,adm user
 apt update
 clear
 echo "===================================="
@@ -20,7 +20,7 @@ sudo service xrdp start
 clear
 echo "=======================100%"
 echo "===================================="
-echo "Username : akuhnet"
+echo "Username : user"
 echo "Password : 123"
 echo Go to settings add port 3389
 echo "===================================="
